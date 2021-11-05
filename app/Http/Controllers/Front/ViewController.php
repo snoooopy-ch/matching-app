@@ -71,6 +71,16 @@ class ViewController extends Controller
         return view('front.ranking', $data);
     }
 
+    public function rankingRedirect(Request $request) {
+        if ($request->has('scene_id')) {
+            return redirect('/ranking/scene' . $request->scene_id);
+        } else if ($request->has('category_id')) {
+            return redirect('/ranking/category' . $request->category_id);
+        }
+
+        return redirect()->back();
+    }
+
     public function terms()
     {
         $data['title'] = '利用規約';
