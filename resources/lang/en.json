@@ -1,0 +1,69 @@
+{
+    "signin_to_admin": "Sign In To Admin",
+    "email": "Email",
+    "password": "Password",
+    "sign_in": "Sign In",
+    "login": "Login",
+
+    "dashboard": "Dashboard",
+    "category": "Category",
+    "scene": "Scene",
+    "app": "App",
+    "logout": "Log Out",
+    "my_profile": "My Profile",
+
+    "total_apps": "Total Apps",
+    "all_app_registered": "All apps registered",
+    "new_apps": "New Apps",
+    "from_this_month": "from this month",
+    "google_store_app": "Google Store Apps",
+    "apple_store_app": "Apple Store Apps",
+
+    "no": "No",
+    "name": "Name",
+    "num_of_apps": "Number of Apps",
+    "created_at": "Date Added",
+    "actions": "Actions",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+
+    "save": "Save",
+    "close": "Close",
+    "cancel": "Cancel",
+
+    "are_you_sure": "Are you sure?",
+    "yes": "Yes",
+
+    "update_success": "Updated successfully",
+    "create_success": "Created successfully",
+    "delete_success": "Deleted",
+
+    "scene_name_required": "Please enter scene name",
+    "category_name_required": "Please enter category name",
+
+    "list_of_scene": "List of Scene",
+    "new_scene": "New Scene",
+    "edit_scene": "Edit Scene",
+
+    "list_of_category": "List of Category",
+    "new_category": "New Category",
+    "edit_category": "Edit Category",
+
+    "list_of_app": "List of App",
+    "new_app": "New App",
+
+    "title": "Title",
+    "icon": "Icon",
+    "type": "Type",
+    "genre": "Genre",
+    "score": "Score",
+    "ratings": "Ratings",
+    "reviews": "Reviews",
+    "price": "Price",
+    "developer": "Developer",
+    "installs": "Installs",
+    "alt_icon": "App Icon",
+    "all": "All",
+    "search_by_title": "Search by title"
+}

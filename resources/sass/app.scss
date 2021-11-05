@@ -1,0 +1,122 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+@import './font.scss';
+
+.page-content {
+    .auth-card {
+        box-shadow: 0 2px 1rem rgba(0,0,0,.15);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0 solid transparent;
+        border-radius: 5px;
+        .card-header h5 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        .card-body {
+            .lead {
+                font-weight: 500;
+            }
+            .form-group {
+                label {
+                    color: #212529;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+.login-page,
+.register-page {
+    /* padding: 80px 5px;
+    background-size: 100%; */
+    background-repeat: no-repeat;
+}
+
+.swiper-pagination {
+    position: relative !important;
+    bottom: 0 !important;
+    margin-top: 10px;
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.b-rating {
+    background-color: transparent !important;
+    &:focus {
+        box-shadow: none !important;
+        background-color: transparent !important;
+    }
+}
+.icon-setting {
+    width: 27px;
+    height: 6px;
+}
+.breadcrumb {
+    background-color: white !important;
+    .breadcrumb-item:first-child {
+        .b-icon {
+            margin-right: 10px;
+        }
+    }
+}
+.page-wrapper {
+    background: $bg-color;
+    .page-content {
+        padding-top: 84px;
+        min-height: 650px;
+    }
+}
+.page-wrapper {
+    .blog-content {
+        line-height: 35px;
+        h2 {
+            font-weight: bold;
+            color: black !important;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            padding: 15px 5px;
+            margin: 30px 0px;
+            line-height: 1.4;
+        }
+        h3 {
+            font-weight: bold;
+            color: black !important;
+            border-left: 5px solid black;
+            padding: 6px 25px;
+            margin: 30px 0px;
+            line-height: 1.4;
+        }
+        h4 {
+            font-weight: bold;
+            color:black !important;
+            margin: 30px 0px;
+            line-height: 1.4;
+        }
+    }
+}
+.blog-category-page {
+    .breadcrumb {
+        background-color: $bg-color !important;
+    }
+}
+@media (max-width: 480px) {
+    .detail-page {
+        .app-details {
+            .tabs {
+                ul.nav {
+                    flex-direction: column !important;
+                }
+            }
+        }
+    }
+}

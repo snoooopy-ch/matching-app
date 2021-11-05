@@ -1,0 +1,29 @@
+{
+  "name": "google-play-api",
+  "version": "1.0.8",
+  "description": "turn google play scraper into a RESTful API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Facundo Olano",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facundoolano/google-play-api.git"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "google-play-scraper": "^8.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-semistandard": "^15.0.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.1.0"
+  }
+}
