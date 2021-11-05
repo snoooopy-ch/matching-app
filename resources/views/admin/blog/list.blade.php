@@ -181,7 +181,7 @@
             title: '{{ __("title") }}',
             filterable: false,
             template: function(row) {
-                return '<a href="/blog/'+ row.id +'" target="_blank"><span class="blog-title" title="'+ row.title +'">' + row.title + '</span></a>';
+                return '<a href="/' + row.slug + '/'+ row.id +'" target="_blank"><span class="blog-title" title="'+ row.title +'">' + row.title + '</span></a>';
             }
         }, {
             field: 'name',

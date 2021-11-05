@@ -71,6 +71,7 @@ export default {
         this.getBlog(this.blogId)
         this.getOtherBlogs(this.blogId)
         this.updateVisitCount(this.blogId)
+        this.getNewBlogs(this.bllogId)
     },
     methods: {
         getBlog(id) {
@@ -91,6 +92,15 @@ export default {
             axios.post('/other-blogs', { id: id})
                 .then(res => {
                     this.popularBlogs = res.data
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+        },
+        getNewBlogs(id) {
+            axios.post('/new-blogs', { id: id})
+                .then(res => {
+                    this.newBlogs = res.data
                 })
                 .catch(err => {
                     console.log(err)

@@ -29,6 +29,7 @@ Route::namespace('Front')->group(function(){
     Route::post('getBlogsByCategory', 'ApiController@getBlogsByCategory');
     Route::get('blog/{id}', 'ApiController@getBlog');
     Route::post('other-blogs', 'ApiController@getOtherBlogs');
+    Route::post('new-blogs', 'ApiController@getNewBlogs');
 
     Route::get('categories', 'ApiController@getCategories');
     Route::get('blog-categories', 'ApiController@getBlogCategories');

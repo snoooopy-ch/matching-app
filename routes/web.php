@@ -51,7 +51,7 @@ Route::namespace('Front')->group(function() {
     Route::get('/', 'ViewController@home');
     Route::get('/login', 'ViewController@login');
     Route::get('/register', 'ViewController@register');
-    Route::get('/ranking', 'ViewController@ranking');
+    Route::get('/ranking/{id}', 'ViewController@ranking');
     Route::get('/terms', 'ViewController@terms');
     Route::get('/privacy', 'ViewController@privacy');
     Route::get('/app/{id}', 'ViewController@appDetail');

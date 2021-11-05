@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Scene;
 use App\Category;
 use App\App;
@@ -39,17 +40,21 @@ class ViewController extends Controller
     {
         $data['scene_id'] = '';
         $data['scene_name'] = '';
-        if ($request->has('scene_id')) {
-            $scene = Scene::where('id', $request->scene_id)->first();
-            $data['scene_id'] = $request->scene_id;
-            $data['scene_name'] = $scene->name;
-        }
-
         $data['category_id'] = '';
         $data['category_name'] = '';
-        if ($request->has('category_id')) {
-            $category = Category::where('id', $request->category_id)->first();
-            $data['category_id'] = $request->category_id;
+
+        $id = $request->id;
+        if (Str::startsWith($id, 'scene')) {
+            $id = str_replace('scene', '', $id);
+
+            $scene = Scene::where('id', $id)->first();
+            $data['scene_id'] = $id;
+            $data['scene_name'] = $scene->name;
+        } else if (Str::startsWith($id, 'category')) {
+            $id = str_replace('category', '', $id);
+
+            $category = Category::where('id', $id)->first();
+            $data['category_id'] = $id;
             $data['category_name'] = $category->name;
         }
 

@@ -100,6 +100,19 @@ class ApiController extends Controller
         return response()->json($other_blogs);
     }
 
+    public function getNewBlogs(Request $request)
+    {
+        $cur_id = $request->id;
+        $other_blogs = Blog::leftJoin('blog_categories', 'blog_categories.id', '=', 'blogs.blog_category_id')
+            ->select('blogs.id', 'title', 'name', 'slug', 'content', 'thumb_img', 'blogs.created_at', 'blogs.updated_at')
+            ->where('status', 1)
+            ->where('blogs.id', '!=', $cur_id)
+            ->orderBy('blogs.created_at', 'desc')
+            ->limit(3)
+            ->get();
+        return response()->json($other_blogs);
+    }
+
     public function getCategories()
     {
         $categories = Category::orderBy('name')->get();

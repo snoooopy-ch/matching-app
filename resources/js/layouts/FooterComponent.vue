@@ -39,8 +39,8 @@ export default {
                 {
                     title: 'アプリを探す',
                     subLinks: [
-                        { path: '/ranking?scene_id=4', title: 'シーンから探す' },
-                        { path: '/ranking?category_id=6', title: 'カテゴリから探す' }
+                        { path: '/ranking/scene4', title: 'シーンから探す' },
+                        { path: '/ranking/category6', title: 'カテゴリから探す' }
                     ]
                 },
                 {

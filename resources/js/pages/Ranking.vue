@@ -310,7 +310,7 @@ export default {
             } else {
                 location.href = '/ranking?scene_id=' + this.selectedSceneId
             } */
-            location.href = '/ranking?scene_id=' + this.selectedSceneId
+            location.href = '/ranking/scene' + this.selectedSceneId
         },
         selectCategory(categoryId, categoryName) {
             this.selectedCategoryId = categoryId
@@ -322,7 +322,7 @@ export default {
             } else {
                 location.href = '/ranking?category_id=' + this.selectedCategoryId
             } */
-            location.href = '/ranking?category_id=' + this.selectedCategoryId
+            location.href = '/ranking/category' + this.selectedCategoryId
         },
         selectPage() {
             this.getAppList()

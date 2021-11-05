@@ -54,7 +54,7 @@ class BlogController extends Controller
         }
 
         $data = Blog::leftJoin('blog_categories', 'blog_categories.id', '=', 'blogs.blog_category_id')
-        ->select('blogs.id', 'title', 'blog_categories.name', 'status', 'blogs.created_at')
+        ->select('blogs.id', 'title', 'blog_categories.name', 'status', 'blogs.created_at', 'blog_categories.slug')
         ->where($where)
         ->offset(($page-1)*$length)
         ->limit($length)
