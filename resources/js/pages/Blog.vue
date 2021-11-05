@@ -71,7 +71,7 @@ export default {
         this.getBlog(this.blogId)
         this.getOtherBlogs(this.blogId)
         this.updateVisitCount(this.blogId)
-        this.getNewBlogs(this.bllogId)
+        this.getNewBlogs(this.blogId)
     },
     methods: {
         getBlog(id) {
