@@ -6,7 +6,7 @@
                 <aside v-if="!$isMobile()" class="left-side">
                     <div class="widget">
                         <div class="widget-header d-flex align-items-center justify-content-between">
-                            <a href="/ranking" class="d-inline-block">
+                            <a href="#" class="d-inline-block disabled-link">
                                 <span class="widget-title m-2">カテゴリから探す</span>
                             </a>
                             <b-icon :icon="categoryGroupShown ? 'chevron-double-down' : 'chevron-double-up'" font-scale="1" class="mr-1" v-b-toggle.collapse-categories></b-icon>
@@ -26,7 +26,7 @@
                     </div>
                     <div class="widget">
                         <div class="widget-header d-flex align-items-center justify-content-between">
-                            <a href="/ranking" class="d-inline-block">
+                            <a href="#" class="d-inline-block disabled-link">
                                 <span class="widget-title m-2">シーンから探す</span>
                             </a>
                             <b-icon :icon="sceneGroupShown ? 'chevron-double-down' : 'chevron-double-up'" font-scale="1" class="mr-1" v-b-toggle.collapse-scenes></b-icon>
@@ -472,6 +472,9 @@ export default {
     }
     hr {
         border-top: 3px solid black;
+    }
+    .disabled-link {
+        pointer-events: none;
     }
     @media screen and (max-width: 1400px) {
         .popular-app-wrapper {
