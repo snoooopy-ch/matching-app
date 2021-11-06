@@ -16,9 +16,8 @@
                                 <b-list-group-item
                                     v-for="(category, i) in categories"
                                     :key="i"
-                                    href="#"
+                                    :href="categoryLink(category.id, category.name)"
                                     :class="{ 'active' : category.id == selectedCategoryId }"
-                                    @click="selectCategory(category.id, category.name)"
                                 >
                                     {{ category.name }}
                                 </b-list-group-item>
@@ -37,9 +36,8 @@
                                 <b-list-group-item
                                     v-for="(scene, i) in scenes"
                                     :key="i"
-                                    href="#"
+                                    :href="sceneLink(scene.id, scene.name)"
                                     :class="{ 'active' : scene.id == selectedSceneId }"
-                                    @click="selectScene(scene.id, scene.name)"
                                 >
                                     {{ scene.name }}
                                 </b-list-group-item>
@@ -323,6 +321,12 @@ export default {
                 location.href = '/ranking?category_id=' + this.selectedCategoryId
             } */
             location.href = '/ranking/category' + this.selectedCategoryId
+        },
+        categoryLink(categoryId, categoryName) {
+            return '/ranking/category' + this.selectedCategoryId;
+        },
+        sceneLink(sceneId, sceneName) {
+            return '/ranking/scene' + this.selectedSceneId;
         },
         selectPage() {
             this.getAppList()
