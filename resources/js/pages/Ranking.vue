@@ -323,10 +323,10 @@ export default {
             location.href = '/ranking/category' + this.selectedCategoryId
         },
         categoryLink(categoryId, categoryName) {
-            return '/ranking/category' + this.selectedCategoryId;
+            return '/ranking/category' + categoryId;
         },
         sceneLink(sceneId, sceneName) {
-            return '/ranking/scene' + this.selectedSceneId;
+            return '/ranking/scene' + sceneId;
         },
         selectPage() {
             this.getAppList()
