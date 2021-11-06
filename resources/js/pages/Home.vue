@@ -109,8 +109,7 @@ export default {
                 autoplay: false,
                 breakpoints: {
                     1024: {
-                        slidesPerView: 'auto',
-                        centeredSlides: true,
+                        slidesPerView: 3,
                         spaceBetween: 30
                     },
                     768: {
